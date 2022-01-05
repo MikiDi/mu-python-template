@@ -3,7 +3,7 @@ MAINTAINER Michaël Dierick "michael@dierick.io"
 
 # Gunicorn Docker config
 ENV MODULE_NAME web
-ENV PYTHONPATH "/usr/src/app"
+ENV PYTHONPATH "/usr/src/app:/app"
 ENV WEB_CONCURRENCY "1"
 
 # Overrides the start.sh used in `tiangolo/meinheld-gunicorn`
